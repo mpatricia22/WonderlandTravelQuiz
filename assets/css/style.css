@@ -1,0 +1,201 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #050402;
+}
+nav{
+  background: white;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #050402;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #050402;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active, a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(/assets/images/img1.png) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+/** footer **/
+
+
+footer {
+ padding: 4px 0;
+ background-color: #ffff;
+}
+
+footer .social-networks {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #050402;
+}
+
+footer .social-networks a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+footer .social-networks a {
+opacity: 1.5;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+footer ul li {
+ display: inline-block;
+ padding: 0 15px;
+}
+
+footer ul li a:hover{
+  opacity: 1;
+}
+
+footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #050402;
+}
+
+
+.main {
+  text-align: center;
+  padding: 350px 0;
+  position: relative;
+  height: 100vh;
+  color: black;
+  overflow: hidden;
+}
+
+.main h1 {
+    margin-bottom: -30px;
+    font-size: 64px;
+  }
+
+.main #startQuiz {
+  margin-top: 2rem;
+  width: 180px;
+  padding: 12px;
+  color: black;
+  font-weight: 1000;
+  background: #5279de;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 952px){
+  .main h1{
+    font-size: 30px;
+    margin-top: 5px;
+    padding-left: 20px;
+    text-align: center;
+  }
+}
