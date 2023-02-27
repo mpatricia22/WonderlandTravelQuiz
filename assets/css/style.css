@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -7,17 +9,14 @@
 }
 body{
   font-family: 'PT Sans', sans-serif;
-  letter-spacing: 2px;
-  font-weight: 400;
-  color: #050402;
 }
 nav{
-  background: white;
+  background: #1b9bff;
   height: 80px;
   width: 100%;
 }
 label.logo{
-  color: #050402;
+  color: black;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -33,13 +32,15 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #050402;
-  font-size: 17px;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 1px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  font-weight: 600;
 }
-a.active, a:hover{
+a.active,a:hover{
   background: #1b9bff;
   transition: .5s;
 }
@@ -72,7 +73,7 @@ a.active, a:hover{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: white;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -88,7 +89,7 @@ a.active, a:hover{
   }
   a:hover,a.active{
     background: none;
-    color: #0082e6;
+    color:#1b9bff;
   }
   #check:checked ~ ul{
     left: 0;
@@ -99,12 +100,13 @@ section{
   background-size: cover;
   height: calc(100vh - 80px);
 }
+
 /** footer **/
 
 
 footer {
  padding: 4px 0;
- background-color: #ffff;
+ background-color: #1b9bff;
 }
 
 footer .social-networks {
@@ -125,7 +127,7 @@ footer .social-networks a {
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 footer .social-networks a {
@@ -145,7 +147,7 @@ footer ul {
 footer ul li a {
   color: inherit;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 footer ul li {
@@ -177,6 +179,8 @@ footer .copyright {
 .main h1 {
     margin-bottom: -30px;
     font-size: 64px;
+    font-family: 'PT Sans', sans-serif;
+
   }
 
 .main #startQuiz {
@@ -185,7 +189,7 @@ footer .copyright {
   padding: 12px;
   color: black;
   font-weight: 1000;
-  background: #5279de;
+  background: #1b9bff;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
