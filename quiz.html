@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb209d2db5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/quiz.css">
     <title>Quizia</title>
     <script src="https://kit.fontawesome.com/275277032e.js" crossorigin="anonymous"></script>
@@ -55,38 +54,52 @@
     </div>
 
     <!--Start quiz Box-->
-    <div class="quiz_box"></div>
-    <header>
-        <div class="title">Quizia Travel Quiz</div>
-        <div class="timer">
-            <div class="time_text">Time left</div>
-            <div class="time_sec">15</div>
-        </div>
-    </header>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quizia Travel Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="time_sec">15</div>
+            </div>
+        </header>
 
-    <section>
-        <div class="que_text">
-            <span>Which capital city is the furthest north in the world?</span>
-        </div>
-        <div class="option_list">
-            <div class="option">
-                <span>Reykjavik, Iceland</span>
-                <div class="icon tick"><i class="fas fa-check"></i></div>
+        <section>
+            <div class="que_text">
+                <span>Which capital city is the furthest north in the world?</span>
             </div>
-            <div class="option">
-                <span>Helsinki, Finland</span>
-                <div class="icon tick"><i class="fas fa-times"></i></div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Reykjavik, Iceland</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Helsinki, Finland</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Oslo, Norway</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Tallinn, Estonia</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
             </div>
-            <div class="option">
-                <span>Oslo, Norway</span>
-                <div class="icon tick"><i class="fas fa-times"></i></div>
+
+        </section>
+
+        <!--Start quiz Box footer-->
+
+
+        <footer>
+            <div class="total_que">
+                <span>
+                    <p>2</p>Of<p>5</p>Questions
+                </span>
             </div>
-            <div class="option">
-                <span>Tallinn, Estonia</span>
-                <div class="icon tick"><i class="fas fa-times"></i></div>
-            </div>
-        </div>
-    </section>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
 </body>
 
 </html>
