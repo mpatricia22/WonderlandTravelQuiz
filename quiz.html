@@ -3,17 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--Specify the character encoding for the HTML document. UTF-8 covers almost all of the characters and symbols in the world!-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This gives the browser instructions on how to control the page's dimensions and scaling.-->
     <meta name="description" content="Quizz website">
+    <!--Adding description to content attribute-->
     <meta name="keywords" content="quizz, fun, guess, travel, places, world, ireland">
+    <!--Keywords that help people to find the page-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb209d2db5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/quiz.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Link to an external CSS style sheet -->
     <title>Quizia</title>
-    <script src="https://kit.fontawesome.com/275277032e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bb209d2db5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,89 +37,84 @@
             </ul>
         </nav>
     </header>
-    <!--Start quiz button-->
-    <div class="start-btn"><button>Start Quiz here</button></div>
-    <!--Start quiz button-->
+    <!--End top nav-->
+
+    <section class="hero">
+        <h1>Welcome to Quizia</h1>
+        <p class="desc">A pleace where you can have fun and test your knowledge about places and travels.</p>
+    </section>
+
+
+
+    </section>
+    <!--End top nav-->
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
     <div class="info_box">
-        <div class="info_title">
-            <span>Quiz Rules</span>
-        </div>
-        <div class="info_list">
-            <div class="info">1. Keep in mind you will have only<span>15 seconds</span>per each question.</div>
-            <div class="info">2. Once you select your answer, you cannot change your mind.</div>
-            <div class="info">3. You will not be able to select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You get points on the basis of your correct answers.</div>
-            <div class="info">6. When you complete all the answers, you can see your results.</div>
+        <div class="info-title"><span>General rules of the Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Keep in mind have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. As soon as you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You are not able to exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points if you get the correct answers.</div>
         </div>
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue Quiz</button>
+            <button class="restart">Keep Playing</button>
         </div>
     </div>
 
-    <!--Start quiz Box-->
+    <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
-            <div class="title">Quizia Travel Quiz</div>
+            <div class="title">Quizia Travels</div>
             <div class="timer">
-                <div class="time_text">Time left</div>
-                <div class="time_sec">15</div>
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
             </div>
+            <div class="time_line"></div>
         </header>
-
         <section>
             <div class="que_text">
-                <span>Which capital city is the furthest north in the world?</span>
+                <!-- Here I've inserted question from JavaScript -->
             </div>
             <div class="option_list">
-                <div class="option">
-                    <span>Reykjavik, Iceland</span>
-                    <div class="icon tick"><i class="fas fa-check"></i></div>
-                </div>
-                <div class="option">
-                    <span>Helsinki, Finland</span>
-                    <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Oslo, Norway</span>
-                    <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Tallinn, Estonia</span>
-                    <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
+                <!-- Here I've inserted options from JavaScript -->
             </div>
-
         </section>
 
-        <!--Start quiz Box footer-->
-
-
+        <!-- footer of Quiz Box -->
         <footer>
             <div class="total_que">
-                <span>
-                    <p>2</p>of<p>5</p>Questions
-                </span>
+                <!-- Here I've inserted Question Count Number from JavaScript -->
             </div>
-            <button class="next_btn">Next Question</button>
+            <button class="next_btn">Next Que</button>
         </footer>
     </div>
 
-    <!--Start Result Box-->
+    <!-- Result Box -->
     <div class="result_box">
         <div class="icon">
-        <i class="fas fa-crown"></i>
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
     </div>
-    <div class="complete_">You've completed the Quiz</div>
-    <div class="score_text">
-        <span>and sorry, you got only <p>2</p>out of <p>5</p></span>
-    </div>
-    <div class="buttons">
-        <button class="restart">Replay Quiz</button>
-        <button class="restart">Quit Quiz</button>
-    </div>
-    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="assets/js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="assets/js/script.js"></script>
 
 </body>
 
