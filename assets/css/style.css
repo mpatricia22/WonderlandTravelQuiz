@@ -12,6 +12,31 @@ body, h1 {
   font-family: 'Raleway', 'sans-serif';
 }
 
+.hero {
+  width: 100vw;
+  height: 100vh;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .btn {
+    font-size: 30px;
+  font-weight: 500;
+  color: #007bff;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #fcfb00;
+  cursor: pointer;
+}
+
+.hero, h1{
+  text-align: center;
+  font-size: 50px;
+}
+
 nav {
   background: #fcfb00;
   height: 80px;
@@ -194,7 +219,7 @@ footer .copyright {
 .main h1 {
   margin-bottom: -30px;
   font-size: 64px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Raleway', 'sans-serif';
 
 }
 
@@ -205,8 +230,8 @@ footer .copyright {
   color: black;
   font-weight: 1000;
   background: #fcfb00;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 18px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -223,7 +248,9 @@ footer .copyright {
 
 
 body {
-  background: #007bff;
+  background-image: url(/assets/images/imag2.jpg);
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
 
 ::selection {
@@ -253,14 +280,14 @@ body {
 }
 
 .start_btn button {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
   color: #007bff;
   padding: 15px 30px;
   outline: none;
   border: none;
   border-radius: 5px;
-  background: #fff;
+  background: #fcfb00;
   cursor: pointer;
 }
 
@@ -604,3 +631,6 @@ footer button.show {
   color: #fff;
   background: #007bff;
 }
+
+/** Sign up page **/
+
