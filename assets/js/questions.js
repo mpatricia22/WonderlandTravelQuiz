@@ -1,4 +1,4 @@
-// creating an array and passing the number, questions, options, and answers
+// questions, answers, options.
 let questions = [{
     numb: 1,
     question: "What is the most Northern Capital City??",
@@ -89,7 +89,7 @@ let questions = [{
     ]
   },
 
-  
+
 
 
 ];
